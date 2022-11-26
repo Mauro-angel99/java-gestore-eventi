@@ -90,7 +90,6 @@ public class Main {
 		  }
 
 		
-		}
 		
 		if(pe.numeroEventi() > 0) {
 		pe.listEventi();
@@ -112,6 +111,7 @@ public class Main {
 			System.out.println("Non ci sono eventi in programma!");
 		}
 	
+		}
 	}
 		
 }
