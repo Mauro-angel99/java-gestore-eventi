@@ -40,14 +40,12 @@ public class Main {
 	      System.out.println("Numero di posti già occupati:");
 	      int postiPrenotati = sc.nextInt();
 	      
-		
 		  try {
+		  
 		  Evento e = new Evento(titolo, giorno, mese, anno, LocalDate.now(), posti, postiPrenotati);
 		  
 		  pe.addEvento(e);
 		
-		  
-		  
 		  e.scadenza();
 		   while(true) {
 			  System.out.println("Vuoi prenotare? (y/n)");
@@ -110,6 +108,9 @@ public class Main {
 		}else {
 			System.out.println("Non ci sono eventi in programma!");
 		}
+		
+		Concerto c = new Concerto("Lil Baby", 15, 12, 2023, LocalDate.now(), 2000, 0, "20.90", 21, 0);
+		System.out.println(c);
 	
 		}
 	}
